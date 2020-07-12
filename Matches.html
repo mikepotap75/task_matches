@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>The Game Of Matches</title>
+	<script type="text/javascript" src = "Matches.js"></script>
+</head>
+<body onload = "showMatches(25,'allMatches', 1); document.getElementById('numberOfRemMatches').innerHTML = 25">
+  <h1> The Game of Matchboxes </h1>
+  <div class = "info">
+    <h3><hr> This game gives you an opportunity to choose: <br>  1) overall number of matches in the matchbox: <b>25</b>; <br>  2) max. number of matches that player can take from the matchbox: <b>3</b>.<br><hr> You will take the first turn. 
+    <hr> Click one of the buttons with numbers to take corresponding number of matches.<br><hr> If you want to play the alternative mode, click the "Alternative Game" button.<hr>
+      </h3>
+  </div>
+  <br><br>
+	<div>
+	   <p id = "remMatches">Remaining Matches<p id = "allMatches" style = "width: 75%;"></p></p>
+	   <p style = "float:left; width: 25%">Cuantity Of Remaining Matches:</p>
+	   <p id = "numberOfRemMatches" style = "float:right; width: 75%;"></p>
+	</div>
+	<a href = "Game2.html"><input type = "button" id = "additional" value = "Alternative Game" onclick = ""></a><br>
+	<input type = "button" id = "button1" value = "1" onclick = "add(1);">
+	<input type = "button" id = "button2"  value = "2" onclick = "add(2);">
+	<input type = "button" id = "button3"  value = "3" onclick = "add(3);">
+	<div >
+     <h3>I take (Quantity of matches in my matchbox): <h4 id = "text1"></h4></h3>
+  </div>
+  <div">
+     <h3>Computer takes (Quantity of matches in the matchbox of the computer): <h4 id = "text2"></h4></h3>
+  </div>
+  <div">
+     <div id = "warning" style = "height: 40px; float: left; width: 50%;"></div>
+     <div id = "result"  style = "height: 40px; float: right; width: 50%;"></div>
+  </div>
+  <div>
+     <h1 id = "myMatches"></h1>
+     <h1 id = "compMatches"></h1>
+  </div>
+</body>
